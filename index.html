@@ -15,7 +15,7 @@
     </div>
     <ul>
       <li v-for="(temp, index) in temperatures" v-bind:key="index">
-        {{ convertToFahrenheit(temp) }}°F
+        {{temp}}°C = {{ convertToFahrenheit(temp) }}°F
         <button class="delete-button" v-on:click="removeTemperature(index)">
           Delete
         </button>
